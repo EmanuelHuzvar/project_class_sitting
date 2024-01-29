@@ -1,0 +1,151 @@
+body {
+    background-color: #e5ecf6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-card {
+    background-color: #f4f9ff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  
+  .course-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .course-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .course-details {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .course-details div {
+    margin-bottom: 5px;
+  }
+  
+  .course-details div:last-child {
+    margin-bottom: 0;
+  }
+  
+#header{
+    text-align: center;
+}  
+
+#modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100svh;
+    width: 100%;
+}
+
+#modal > #content {
+    width: fit-content;
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+#modal #close-modal {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#modal #seat-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#modal #seat-container .seat-btn {
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#modal #seat-container .seat-btn:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.active-btn {
+    background-color: rgb(201, 201, 201);
+}
+
+.yes-no{
+    display: flex;
+    gap: 5px;
+}
+
+.yes-no button{
+    flex: 1;
+}
+#logout{
+    right: 15px;
+    top: 15px;
+}
+#logout-btn {
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(113, 113, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  #myCoursesButton{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(113, 113, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #reserve-seat-title{
+    font-size: 30px;
+  }
+  #lector-p{
+    font-size: 24px;
+  }
+

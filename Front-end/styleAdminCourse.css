@@ -1,0 +1,255 @@
+body {
+    background-color: #e5ecf6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-card {
+    background-color: #f4f9ff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  
+  .course-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .course-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .course-details {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .course-details div {
+    margin-bottom: 5px;
+  }
+  
+  .course-details div:last-child {
+    margin-bottom: 0;
+  }
+  
+#header{
+    text-align: center;
+}  
+
+#modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100svh;
+    width: 100%;
+}
+
+#modal > #content {
+    width: fit-content;
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#modal #close-modal {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#modal #seat-container{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#modal #seat-container .seat-btn {
+    padding: 5px 2px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#modal #seat-container .seat-btn:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.active-btn {
+    background-color: rgb(201, 201, 201);
+}
+
+.yes-no{
+    display: flex;
+    gap: 5px;
+}
+
+.yes-no button{
+    flex: 1;
+}
+#logout{
+    right: 15px;
+    top: 15px;
+}
+#logout-btn {
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(113, 113, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  #createCourseButton{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(113, 113, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #content {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+  
+  #close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #content h1 {
+    margin-top: 0;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="datetime-local"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  #seat-container {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  #content textarea {
+    height: 150px;
+  }
+  
+  #content textarea#course-description {
+    height: 200px;
+  }
+  
+  /* Increase the size and visibility of the date input */
+  #course-date {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  /* Style modifications to improve visibility */
+  #modal {
+    backdrop-filter: blur(4px);
+  }
+  
+  #content {
+    color: #333;
+  }
+  
+  #submit-btn {
+    background-color: #333;
+  }
+  
+  #submit-btn:disabled {
+    background-color: #999;
+  }
+  
+  #submit-btn:hover {
+    background-color: #555;
+  }
+  
